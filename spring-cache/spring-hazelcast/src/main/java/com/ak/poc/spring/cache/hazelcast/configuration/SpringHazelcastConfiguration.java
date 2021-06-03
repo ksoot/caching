@@ -62,7 +62,8 @@ public class SpringHazelcastConfiguration {
 
 		config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
 		config.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(true);
-		config.getNetworkConfig().getJoin().getTcpIpConfig().addMember("localhost");
+		config.getNetworkConfig().getJoin().getTcpIpConfig().addMember("192.168.0.145");
+		config.getNetworkConfig().getJoin().getTcpIpConfig().addMember("192.168.0.172");
 
 		config.getNetworkConfig().setPort(5701);
 		config.getNetworkConfig().setPortAutoIncrement(false);
@@ -86,7 +87,7 @@ public class SpringHazelcastConfiguration {
 		mapConfig.setEvictionConfig(new EvictionConfig().setEvictionPolicy(EvictionPolicy.LRU)
 				.setMaxSizePolicy(MaxSizePolicy.PER_NODE).setSize(1));
 		mapConfig.addEntryListenerConfig(new EntryListenerConfig().setImplementation(new MyMapEventListener<String,Book>()));
-		mapConfig.getMapStoreConfig().setImplementation(new MyMapStore<String, Book>()).setEnabled(true).setInitialLoadMode(InitialLoadMode.EAGER);
+		mapConfig.getMapStoreConfig().setImplementation(new MyMapStore<String, Book>()).setEnabled(true);
 
 		return mapConfig;
 	}
