@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ak.poc.spring.cache</groupId>
+		<artifactId>spring-cache</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.ak.poc.spring.cache.jcache.ri</groupId>
+	<artifactId>spring-jcache-ri</artifactId>
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.jsr107.ri</groupId>
+			<artifactId>cache-ri-impl</artifactId>
+			<version>1.0.0-RC1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+		</dependency>
+	</dependencies>
+</project>
