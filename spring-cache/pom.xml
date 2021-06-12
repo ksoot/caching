@@ -6,14 +6,13 @@
     <version>2.4.5</version>
   </parent>
   <groupId>com.ak.poc.spring.cache</groupId>
-  <artifactId>spring-cache</artifactId>
+  <artifactId>cache</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Parent of all spring cache</name>
   <description>Parent of all spring cache</description>
   <modules>
   	<module>spring-ehCache</module>
-  	
   	<module>spring-hazelcast</module>
   	<module>spring-jcache-ri</module>
   </modules>
