@@ -9,8 +9,7 @@
   <artifactId>cache</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Parent of all spring cache</name>
-  <description>Parent of all spring cache</description>
+  <name>cache</name>
   <modules>
   	<module>spring-ehCache</module>
   	<module>spring-hazelcast</module>
@@ -36,4 +35,5 @@
   		<artifactId>spring-boot-starter-test</artifactId>
   	</dependency>
   </dependencies>
+  <description>Parent of all spring cache</description>
 </project>
